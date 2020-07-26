@@ -62,11 +62,11 @@ class Song
 
   def self.destroy_all
     self.all.clear
-=======
+  end 
+  
   def self.create
     song = self.new
     song
->>>>>>> 22c66ddb31b752987cec2b450469c631aaf63e08
   end
 
 end
