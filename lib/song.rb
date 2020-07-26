@@ -10,14 +10,13 @@ class Song
     self.class.all << self
   end
   
-<<<<<<< HEAD
-    def self.create
+def self.create
     song = self.new
-    song.save
+    self.all << song
     song
-  end 
+  end
 
-    def self.new_by_name(name)
+  def self.new_by_name(name)
     song = self.new
     song.name = name
     song
@@ -63,11 +62,6 @@ class Song
 
   def self.destroy_all
     self.all.clear
-=======
-  def self.create
-    song = self.new
-    song
->>>>>>> 22c66ddb31b752987cec2b450469c631aaf63e08
   end
 
 end
